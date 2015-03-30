@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network>
+	<locations>
+		<!-- start , 14 locations -->
+		<location name="Jerusalem" goalDistance="416" danger="8">
+			<description>This is the Capital City of Kindom of Jerusalem. 
+			Saracen army is marching on here!
+			</description>
+			<objects>
+				<object type="weapon" power="50">sword</object>
+				<object type="weapon" power="40">Lance</object>
+				<object type="weapon" power="10">Knife</object>
+				<object type="supply" power="40">medicine</object>
+				<object type="supply" power="30">food</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Ashdod" directions="W" />
+				<exit nextLocation="TelAviv-Yofo" directions="NW" />
+				<exit nextLocation="Afula" directions="N" />
+			</exits>
+		</location>
+
+		<location name="Ashdod" goalDistance="393" danger="6">
+			<description>This is Ashdod, there is a port to Limassol of Cyprus
+			</description>
+			<objects>
+				<object type="supply" power="40">medicine</object>
+				<object type="supply" power="30">food</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Limassol" directions="NW" />
+				<exit nextLocation="TelAviv-Yofo" directions="NE" />
+				<exit nextLocation="Jerusalem" directions="E" />
+			</exits>
+		</location>
+
+		<location name="TelAviv-Yofo" goalDistance="370" danger="6">
+			<description>This is TelAviv-Yofo, there is a port to Limassol of
+				Cyprus
+			</description>
+			<objects>
+				<object type="supply" power="30">food</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Limassol" directions="NW" />
+				<exit nextLocation="ZihronYa'akov" directions="NE" />
+				<exit nextLocation="Jerusalem" directions="SE" />
+				<exit nextLocation="Ashdod" directions="SW" />
+			</exits>
+		</location>
+
+		<location name="Afula" goalDistance="335" danger="6">
+			<description>This is Afula, mountain to Haifa but no maountain to
+				Beirut
+			</description>
+			<objects>
+				<object type="supply" power="40">medicine</object>
+				<object type="supply" power="30">food</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Haifa" directions="NW" />
+				<exit nextLocation="Beirut" directions="N" />
+				<exit nextLocation="Jerusalem" directions="S" />
+			</exits>
+		</location>
+
+		<location name="ZihronYa'akov" goalDistance="323" danger="5">
+			<description>This is ZihronYa'akov, mountain to Haifa but no
+				maountain to Afula
+			</description>
+			<objects>
+				<object type="supply" power="40">medicine</object>
+				<object type="supply" power="30">food</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Haifa" directions="NE" />
+				<exit nextLocation="Afula" directions="E" />
+				<exit nextLocation="TelAviv-Yofo" directions="SW" />
+			</exits>
+		</location>
+
+		<location name="Limassol" goalDistance="62" danger="7">
+			<description>This is Limassol, mountain to Cyprus-Nicosia
+			</description>
+			<objects>
+				<object type="weapon" power="50">sword</object>
+				<object type="weapon" power="40">Lance</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Cyprus-Nicosia" directions="NE" />
+				<exit nextLocation="Asdod" directions="WE" />
+				<exit nextLocation="TelAviv-Yofo" directions="WE" />
+			</exits>
+		</location>
+
+		<location name="Haifa" goalDistance="303" danger="2">
+			<description>This is Haifa, mountain to ZihronYa'akov and Afula
+			</description>
+			<objects>
+				<object type="supply" power="40">medicine</object>
+				<object type="supply" power="30">food</object>
+			</objects>
+			<exits>
+				<exit nextLocation="ZihronYa'akov" directions="SW" />
+				<exit nextLocation="Afula" directions="SE" />
+				<exit nextLocation="Beirut" directions="NE" />
+			</exits>
+		</location>
+
+		<location name="Beirut" goalDistance="240" danger="4">
+			<description>This is Beirut</description>
+			<objects>
+				<object type="weapon" power="50">sword</object>
+				<object type="weapon" power="10">Knife</object>
+				<object type="supply" power="30">food</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Haifa" directions="SW" />
+				<exit nextLocation="Afula" directions="S" />
+				<exit nextLocation="Tripoli" directions="NE" />
+			</exits>
+		</location>
+
+		<location name="Tripoli" goalDistance="236" danger="5">
+			<description>This is Tripoli</description>
+			<objects>
+				<object type="weapon" power="50">sword</object>
+				<object type="weapon" power="10">Knife</object>
+				<object type="supply" power="30">food</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Beirut" directions="SW" />
+				<exit nextLocation="Latakia" directions="N" />
+				<exit nextLocation="Homs" directions="NE" />
+			</exits>
+		</location>
+
+		<location name="Homs" goalDistance="308" danger="3">
+			<description>This is Homs</description>
+			<objects>
+				<object type="weapon" power="50">sword</object>
+				<object type="weapon" power="10">Knife</object>
+				<object type="supply" power="30">food</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Tripoli" directions="SW" />
+			</exits>
+		</location>
+
+		<location name="Latakia" goalDistance="222" danger="2">
+			<description>This is Latakia</description>
+			<objects>
+				<object type="weapon" power="50">sword</object>
+				<object type="weapon" power="10">Knife</object>
+				<object type="supply" power="40">medicine</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Tripoli" directions="S" />
+				<exit nextLocation="Samandag" directions="N" />
+				<exit nextLocation="Hatay" directions="NE" />
+			</exits>
+		</location>
+
+		<location name="Hatay" goalDistance="277" danger="4">
+			<description>This is Hatay of Antoich</description>
+			<objects>
+				<object type="weapon" power="50">sword</object>
+				<object type="weapon" power="10">Knife</object>
+				<object type="supply" power="40">medicine</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Samandag" directions="W" />
+				<exit nextLocation="Latakia" directions="SW" />
+			</exits>
+		</location>
+
+		<location name="Samandag" goalDistance="255" danger="7">
+			<description>This is Samandag, the port of Antioch</description>
+			<objects>
+				<object type="weapon" power="50">sword</object>
+				<object type="weapon" power="40">Lance</object>
+				<object type="supply" power="40">medicine</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Hatay" directions="E" />
+				<exit nextLocation="Latakia" directions="S" />
+				<exit nextLocation="Cyprus-Nicosia" directions="SW" />
+			</exits>
+		</location>
+
+		<!-- goal -->
+		<location name="Cyprus-Nicosia" goalDistance="0" danger="2">
+			<description>This is the capital of Cyprus, Nicosia, the Goal
+			</description>
+			<objects>
+				<object type="weapon" power="50">sword</object>
+				<object type="weapon" power="40">Lance</object>
+				<object type="supply" power="40">medicine</object>
+			</objects>
+			<exits>
+				<exit nextLocation="Limassol" directions="SW" />
+				<exit nextLocation="Samandag" directions="NE" />
+			</exits>
+		</location>
+	</locations>
+
+	<edges>
+		<!--19 edges -->
+		<edge location1="Jerusalem" location2="Ashdod" direction="W"
+			distance="49" difficulty="10" />
+		<edge location1="Jerusalem" location2="TelAviv-Yofo" direction="NW"
+			distance="53" difficulty="5" />
+		<edge location1="Jerusalem" location2="Afula" direction="N"
+			distance="94" difficulty="10" />
+		<edge location1="Ashdod" location2="Limassol" direction="NW"
+			distance="351" difficulty="8" />
+		<edge location1="Ashdod" location2="TelAviv-Yofo" direction="NE"
+			distance="32" difficulty="4" />
+		<edge location1="Limassol" location2="Cyprus-Nicosia" direction="NE"
+			distance="62" difficulty="10" />
+		<edge location1="TelAviv-Yofo" location2="ZihronYa'akov"
+			direction="NE" distance="60" difficulty="5" />
+		<edge location1="ZihronYa'akov" location2="Haifa" direction="NE"
+			distance="24" difficulty="10" />
+		<edge location1="ZihronYa'akov" location2="Afula" direction="E"
+			distance="32" difficulty="3" />
+		<edge location1="Afula" location2="Haifa" direction="NW"
+			distance="34" difficulty="10" />
+		<edge location1="Afula" location2="Beirut" direction="N"
+			distance="144" difficulty="7" />
+		<edge location1="Haifa" location2="Beirut" direction="NE"
+			distance="130" difficulty="6" />
+		<edge location1="Beirut" location2="Tripoli" direction="NE"
+			distance="68" difficulty="4" />
+		<edge location1="Tripoli" location2="Homs" direction="NE"
+			distance="87" difficulty="5" />
+		<edge location1="Tripoli" location2="Latakia" direction="N"
+			distance="120" difficulty="7" />
+		<edge location1="Latakia" location2="Hatay" direction="NE"
+			distance="82" difficulty="4" />
+		<edge location1="Latakia" location2="Samandag" direction="N"
+			distance="63" difficulty="3" />
+		<edge location1="Hatay" location2="Samandag" direction="W"
+			distance="21" difficulty="2" />
+		<edge location1="Samandag" location2="Cyprus-Nicosia" direction="SW"
+			distance="255" difficulty="5" />
+	</edges>
+
+	<charactors>
+		<charactor>
+			<name>Hero</name>
+			<behavior>adventure</behavior>
+			<objects>
+				<object type="grail" power="0">HolyGrail</object>
+				<object type="weapon" power="50">sword</object>
+				<object type="supply" power="40">medicine</object>
+				<object type="supply" power="30">food</object>
+			</objects>
+			<initial_Location>Jerusalem</initial_Location>
+			<initial_lifeForce>100</initial_lifeForce>
+			<algorithm></algorithm>
+		</charactor>
+
+		<charactor>
+			<name>Saracen</name>
+			<behavior>kill</behavior>
+			<objects>
+				<object type="weapon" power="40">Lance</object>
+			</objects>
+			<initial_Location>Jerusalem</initial_Location>
+			<initial_lifeForce>100</initial_lifeForce>
+			<algorithm></algorithm>
+		</charactor>
+
+		<charactor>
+			<name>Neutral</name>
+			<behavior>nothing</behavior>
+			<objects>
+				<object type="supply" power="30">food</object>
+			</objects>
+			<initial_Locations>
+				<initial_Location>Beirut</initial_Location>
+				<initial_Location>ZihronYa'akov</initial_Location>
+				<initial_Location>Haifa</initial_Location>
+				<initial_Location>Tripoli</initial_Location>
+				<initial_Location>Homs</initial_Location>
+				<initial_Location>Latakia</initial_Location>
+				<initial_Location>Hatay</initial_Location>
+			</initial_Locations>
+			<initial_lifeForce>100</initial_lifeForce>
+			<algorithm></algorithm>
+		</charactor>
+
+		<charactor>
+			<name>Friend</name>
+			<behavior>help</behavior>
+			<objects>
+				<object type="supply" power="40">medicine</object>
+			</objects>
+			<initial_Locations>
+				<initial_Location>Beirut</initial_Location>
+				<initial_Location>ZihronYa'akov</initial_Location>
+				<initial_Location>Haifa</initial_Location>
+				<initial_Location>Tripoli</initial_Location>
+				<initial_Location>Homs</initial_Location>
+				<initial_Location>Latakia</initial_Location>
+				<initial_Location>Hatay</initial_Location>
+				<initial_Location>Cyprus-Nicosia</initial_Location>
+			</initial_Locations>
+			<initial_lifeForce>100</initial_lifeForce>
+			<algorithm></algorithm>
+		</charactor>
+
+		<charactor>
+			<name>Brigands</name>
+			<behavior></behavior>
+			<objects>
+				<object type="weapon" power="50">sword</object>
+			</objects>
+			<initial_Locations>
+				<initial_Location>Samandag</initial_Location>
+				<initial_Location>Tripoli</initial_Location>
+				<initial_Location>Afula</initial_Location>
+				<initial_Location>ZihronYa'akov</initial_Location>
+				<initial_Location>TelAviv-Yofo</initial_Location>
+				<initial_Location>Ashdod</initial_Location>
+				<initial_Location>Limassol</initial_Location>
+			</initial_Locations>
+			<initial_lifeForce>100</initial_lifeForce>
+			<algorithm></algorithm>
+		</charactor>
+	</charactors>
+
+</network>
